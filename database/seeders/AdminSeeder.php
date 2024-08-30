@@ -19,7 +19,7 @@ class AdminSeeder extends Seeder
             'lastname'  => 'Seglo',
             'email'     => 'kofesto@hotmail.com',
             'password'  =>  Hash::make('pass123'),  // password hashed
-           // 'address'   => '24 ago palace way',
+            'address'   => '24 ago palace way',
             'city'      => 'Isolo',
             'state'     => 'Lagos',
             'country'   => 'Nigeria'

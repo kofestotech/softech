@@ -28,3 +28,7 @@ Route::group([
     Route::post('refresh', [UsersController::class,'refresh']);
     Route::post('me', [UsersController::class,'me']);
 });
+
+Route::get('/home',function(Request $request){
+    return response()->json(['welcome'=>'hey, welcome home']);
+})->middleware('role:administrator');

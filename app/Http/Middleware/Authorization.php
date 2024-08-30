@@ -17,7 +17,7 @@ class Authorization
     public function handle(Request $request, Closure $next, $role): Response
     {
         $user = Auth::user();
-        if(!$user || !$user->roles->contains('name',$role)){
+        if(!$user || !$user->roles->contains('role',$role)){
             return response()->json(['message'=>'You are not authorized']);
         }
         return $next($request);
